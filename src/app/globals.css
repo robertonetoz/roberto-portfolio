@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Registered so the whole palette can transition when the page changes "season". */
+@property --bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f7c325;
+}
+@property --fg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2b0a26;
+}
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #a3195b;
+}
+
+/* Ipê palette: roxo, amarelo and branco bloom in sequence across Uberlândia from June to September. */
+:root,
+:root[data-season="amarelo"] {
+  --bg: #f7c325;
+  --fg: #2b0a26;
+  --accent: #a3195b;
+}
+:root[data-season="roxo"] {
+  --bg: #2b0a26;
+  --fg: #f7e8f0;
+  --accent: #f7c325;
+}
+:root[data-season="branco"] {
+  --bg: #faf7fa;
+  --fg: #2b0a26;
+  --accent: #a3195b;
+}
+:root[data-season="rosa"] {
+  --bg: #e45e9f;
+  --fg: #2b0a26;
+  --accent: #faf7fa;
+}
+
+:root {
+  transition:
+    --bg 0.9s cubic-bezier(0.65, 0, 0.35, 1),
+    --fg 0.9s cubic-bezier(0.65, 0, 0.35, 1),
+    --accent 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-accent: var(--accent);
+  --color-aubergine: #2b0a26;
+  --color-ipe: #f7c325;
+  --color-ipe-roxo: #a3195b;
+  --color-ipe-rosa: #e45e9f;
+
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-anybody), var(--font-instrument), sans-serif;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.muted {
+  color: color-mix(in srgb, var(--fg) 62%, transparent);
+}
+.hairline {
+  border-color: color-mix(in srgb, var(--fg) 18%, transparent);
+}
+
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    transition: none;
+  }
+}
