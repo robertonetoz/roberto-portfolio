@@ -162,7 +162,7 @@ export default function ProjectIndex() {
   const current = projects[active];
 
   return (
-    <section id="projetos" data-season="roxo" className="relative px-4 pt-[18vh] sm:px-8">
+    <section id="projetos" data-season="violeta" className="relative px-4 pt-[18vh] sm:px-8">
       <div className="mx-auto max-w-[1500px]">
         <header className="grid gap-8 pb-[10vh] md:grid-cols-[1.15fr_1fr] md:items-end">
           <Stretch

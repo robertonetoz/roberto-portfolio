@@ -4,40 +4,40 @@
 @property --bg {
   syntax: "<color>";
   inherits: true;
-  initial-value: #0f1f1a;
+  initial-value: #000000;
 }
 @property --fg {
   syntax: "<color>";
   inherits: true;
-  initial-value: #f4c542;
+  initial-value: #cdb8ff;
 }
 @property --accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: #e77ab0;
+  initial-value: #9b6bff;
 }
 
-/* "Cerrado à noite": four dark seasons, lit by the yellow and pink of Uberlândia's ipês. */
+/* Black, lilac and purple: the page drifts between black and deep violet as you scroll. */
 :root,
-:root[data-season="cerrado"] {
-  --bg: #0f1f1a;
-  --fg: #f4c542;
-  --accent: #e77ab0;
+:root[data-season="preto"] {
+  --bg: #000000;
+  --fg: #cdb8ff;
+  --accent: #9b6bff;
+}
+:root[data-season="violeta"] {
+  --bg: #0d0618;
+  --fg: #ece5ff;
+  --accent: #b99bff;
+}
+:root[data-season="sombra"] {
+  --bg: #000000;
+  --fg: #e4dbff;
+  --accent: #9b6bff;
 }
 :root[data-season="roxo"] {
-  --bg: #1e0a1b;
-  --fg: #f5e6ef;
-  --accent: #f4c542;
-}
-:root[data-season="anil"] {
-  --bg: #14132b;
-  --fg: #e9e6f7;
-  --accent: #e77ab0;
-}
-:root[data-season="vinho"] {
-  --bg: #3b0e26;
-  --fg: #f8b6d3;
-  --accent: #f4c542;
+  --bg: #241046;
+  --fg: #e2d4ff;
+  --accent: #ffffff;
 }
 
 :root {
@@ -51,10 +51,10 @@
   --color-bg: var(--bg);
   --color-fg: var(--fg);
   --color-accent: var(--accent);
-  --color-aubergine: #1e0a1b;
-  --color-ipe: #f4c542;
-  --color-ipe-roxo: #a3195b;
-  --color-ipe-rosa: #e77ab0;
+  --color-aubergine: #0d0618;
+  --color-ipe: #cdb8ff;
+  --color-ipe-roxo: #5b2bd1;
+  --color-ipe-rosa: #9b6bff;
 
   --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-anybody), var(--font-instrument), sans-serif;

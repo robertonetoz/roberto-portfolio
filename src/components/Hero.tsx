@@ -51,7 +51,7 @@ function Portrait({ photo }: { photo: string | null }) {
           className="object-cover"
         />
       ) : (
-        <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_100%,#e77ab0_0%,#a3195b_45%,#1e0a1b_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_100%,#cdb8ff_0%,#7c4dff_40%,#1a0b33_100%)]" />
       )}
     </div>
   );
@@ -121,7 +121,7 @@ export default function Hero({ photo }: { photo: string | null }) {
     <section
       id="inicio"
       ref={sectionRef}
-      data-season="cerrado"
+      data-season="preto"
       className={reduce ? "relative" : "relative h-[300svh] md:h-[340vh]"}
     >
       <div className="sticky top-0 h-[100svh] overflow-hidden">
