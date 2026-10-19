@@ -45,7 +45,7 @@ function Shot({ project, pan }: { project: Project; pan: MotionValue<number> }) 
           />
         </motion.div>
       </div>
-      <div className="absolute top-[42%] left-[4%] w-[21%] overflow-hidden rounded-[12px] border-[3px] border-[#16040f] bg-aubergine shadow-[0_24px_48px_-16px_rgb(0_0_0/0.6)] md:top-[44%] md:rounded-[22px] md:border-[6px]">
+      <div className="absolute top-[42%] left-[4%] w-[21%] overflow-hidden rounded-[12px] border-[3px] border-black/60 bg-aubergine shadow-[0_24px_48px_-16px_rgb(0_0_0/0.6)] md:top-[44%] md:rounded-[22px] md:border-[6px]">
         <div className="relative aspect-[390/844]">
           <Image
             src={`/projects/${project.slug}-mobile.jpg`}

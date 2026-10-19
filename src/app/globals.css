@@ -4,40 +4,40 @@
 @property --bg {
   syntax: "<color>";
   inherits: true;
-  initial-value: #f7c325;
+  initial-value: #0f1f1a;
 }
 @property --fg {
   syntax: "<color>";
   inherits: true;
-  initial-value: #2b0a26;
+  initial-value: #f4c542;
 }
 @property --accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: #a3195b;
+  initial-value: #e77ab0;
 }
 
-/* Ipê palette: roxo, amarelo and branco bloom in sequence across Uberlândia from June to September. */
+/* "Cerrado à noite": four dark seasons, lit by the yellow and pink of Uberlândia's ipês. */
 :root,
-:root[data-season="amarelo"] {
-  --bg: #f7c325;
-  --fg: #2b0a26;
-  --accent: #a3195b;
+:root[data-season="cerrado"] {
+  --bg: #0f1f1a;
+  --fg: #f4c542;
+  --accent: #e77ab0;
 }
 :root[data-season="roxo"] {
-  --bg: #2b0a26;
-  --fg: #f7e8f0;
-  --accent: #f7c325;
+  --bg: #1e0a1b;
+  --fg: #f5e6ef;
+  --accent: #f4c542;
 }
-:root[data-season="branco"] {
-  --bg: #faf7fa;
-  --fg: #2b0a26;
-  --accent: #a3195b;
+:root[data-season="anil"] {
+  --bg: #14132b;
+  --fg: #e9e6f7;
+  --accent: #e77ab0;
 }
-:root[data-season="rosa"] {
-  --bg: #e45e9f;
-  --fg: #2b0a26;
-  --accent: #faf7fa;
+:root[data-season="vinho"] {
+  --bg: #3b0e26;
+  --fg: #f8b6d3;
+  --accent: #f4c542;
 }
 
 :root {
@@ -51,10 +51,10 @@
   --color-bg: var(--bg);
   --color-fg: var(--fg);
   --color-accent: var(--accent);
-  --color-aubergine: #2b0a26;
-  --color-ipe: #f7c325;
+  --color-aubergine: #1e0a1b;
+  --color-ipe: #f4c542;
   --color-ipe-roxo: #a3195b;
-  --color-ipe-rosa: #e45e9f;
+  --color-ipe-rosa: #e77ab0;
 
   --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-anybody), var(--font-instrument), sans-serif;

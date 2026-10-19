@@ -41,7 +41,7 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
 
 export default function About() {
   return (
-    <section id="sobre" data-season="branco" className="px-4 pt-[22vh] pb-[16vh] sm:px-8">
+    <section id="sobre" data-season="anil" className="px-4 pt-[22vh] pb-[16vh] sm:px-8">
       <div className="mx-auto max-w-[1500px]">
         <Stretch
           from={50}

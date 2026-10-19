@@ -51,7 +51,7 @@ function Portrait({ photo }: { photo: string | null }) {
           className="object-cover"
         />
       ) : (
-        <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_100%,#e45e9f_0%,#a3195b_45%,#2b0a26_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_100%,#e77ab0_0%,#a3195b_45%,#1e0a1b_100%)]" />
       )}
     </div>
   );
@@ -121,7 +121,7 @@ export default function Hero({ photo }: { photo: string | null }) {
     <section
       id="inicio"
       ref={sectionRef}
-      data-season="amarelo"
+      data-season="cerrado"
       className={reduce ? "relative" : "relative h-[300svh] md:h-[340vh]"}
     >
       <div className="sticky top-0 h-[100svh] overflow-hidden">
@@ -145,7 +145,7 @@ export default function Hero({ photo }: { photo: string | null }) {
                     e.preventDefault();
                     scrollToCenter(row);
                   }}
-                  className="relative block aspect-[390/844] overflow-hidden rounded-[10px] bg-aubergine md:aspect-[16/10] md:rounded-[8px]"
+                  className="relative block aspect-[390/844] overflow-hidden rounded-[10px] bg-black/30 md:aspect-[16/10] md:rounded-[8px]"
                 >
                   <Image
                     src={`/projects/${p.slug}-mobile.jpg`}

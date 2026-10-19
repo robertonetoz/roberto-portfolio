@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <section
       id="contato"
-      data-season="rosa"
+      data-season="vinho"
       className="flex min-h-[100svh] flex-col px-4 pt-[20vh] pb-6 sm:px-8"
     >
       <div className="mx-auto flex w-full max-w-[1500px] flex-1 flex-col">
@@ -79,8 +79,8 @@ export default function Contact() {
         <footer className="hairline mt-auto flex flex-col gap-2 border-t pt-6 text-[15px] opacity-80 md:flex-row md:justify-between">
           <p>© Roberto Campos Neto</p>
           <p className="max-w-[60ch] md:text-right">
-            As cores mudam como os ipês de Uberlândia, que florescem roxos, amarelos e brancos entre
-            junho e setembro.
+            As cores vêm do cerrado à noite, iluminado pelo amarelo e pelo rosa dos ipês de
+            Uberlândia.
           </p>
         </footer>
       </div>

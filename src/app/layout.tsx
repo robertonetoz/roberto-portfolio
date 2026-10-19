@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" data-season="amarelo" className={`${anybody.variable} ${instrument.variable}`}>
+    <html lang="pt-BR" data-season="cerrado" className={`${anybody.variable} ${instrument.variable}`}>
       <body className="min-h-full">
         <SmoothScroll />
         <Seasons />
